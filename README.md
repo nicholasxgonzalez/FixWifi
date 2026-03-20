@@ -48,7 +48,7 @@ echo "Rejoining SSID..."
 # Replace 'YOUR_SSID_NAME' with your actual network name
 networksetup -setairportnetwork en0 YOUR_SSID_NAME
 
-Installation
+### 4. Installation
 Create the script: Run nano ~/fixwifi.sh and paste the code above.
 
 Permissions: Make it executable with chmod +x ~/fixwifi.sh.
@@ -57,7 +57,7 @@ Alias: Add alias fixwifi='~/fixwifi.sh' to your ~/.bash_profile.
 
 Initialize: Run source ~/.bash_profile to enable the command.
 
-4. Performance Benchmarks Metric
+## 5. Performance Benchmarks Metric
 Before (Sticky 2.4GHz)
 After (Forced 5GHz)
 RSSI-71 dBm-65 dBm
@@ -65,7 +65,7 @@ Download 80.00 Mbps 428.26 Mbps
 Upload 1.37 Mbps 164.29 Mbps
 Latency 99 ms 7 ms
 
-5. Tools Used
+## 6. Tools Used
 wdutil: Real-time monitoring of Wi-Fi diagnostics and RSSI.
 
 airport: Private framework utility for low-level wireless management.
