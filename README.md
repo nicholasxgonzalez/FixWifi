@@ -27,7 +27,7 @@ The `fixwifi.sh` script performs a "hard-kick" to the wireless interface, bypass
 ## 3. Implementation
 
 ### `fixwifi.sh`
-```bash
+
 #!/bin/bash
 # Force macOS to drop 2.4GHz and rejoin on 5GHz Channel 36
 
@@ -47,6 +47,7 @@ echo "Rejoining SSID..."
 # Force handshake with saved credentials
 # Replace 'YOUR_SSID_NAME' with your actual network name
 networksetup -setairportnetwork en0 YOUR_SSID_NAME
+
 
 ### 4. Installation
 Create the script: Run nano ~/fixwifi.sh and paste the code above.
@@ -71,4 +72,8 @@ wdutil: Real-time monitoring of Wi-Fi diagnostics and RSSI.
 airport: Private framework utility for low-level wireless management.
 
 networksetup: macOS configuration tool for network service settings.
+
+
+
+
 
